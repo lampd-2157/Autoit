@@ -23,6 +23,7 @@ HotKeySet("{ESC}", "EndProgram")
 $MAIN = GUICreate("WLC-ARUBA ", 450, 420)
 
 
+
 ;---------Tạo các thông tin Label---------
 $guide = GUICtrlCreateLabel("CLICK VIEW USER GUIDE!", 15, 30, 165, 25)
 GUICtrlSetFont($guide,9,400,4)
