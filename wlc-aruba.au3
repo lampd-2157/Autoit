@@ -22,11 +22,6 @@ HotKeySet("{ESC}", "EndProgram")
 
 $MAIN = GUICreate("WLC-ARUBA ", 450, 420)
 
-
-<<<<<<< HEAD
-
-=======
->>>>>>> ee6a5fe0f91b7b4b1baf5ba5d0623b1551263c52
 ;---------Tạo các thông tin Label---------
 $guide = GUICtrlCreateLabel("CLICK VIEW USER GUIDE!", 15, 30, 165, 25)
 GUICtrlSetFont($guide,9,400,4)
@@ -121,11 +116,6 @@ While 1
 				$role_user = " role SUN-vlan10-manager"
 			ElseIf GUICtrlRead($role) == "STAFF" Then
 				$role_user = " role SUN-vlan3-staff"
-<<<<<<< HEAD
-=======
-			ElseIf GUICtrlRead($role) == "GUEST" Then
-				$role_user = " role guest"
->>>>>>> ee6a5fe0f91b7b4b1baf5ba5d0623b1551263c52
 			EndIf
 		Case $MSG = $email
 			If GUICtrlRead($email) == "" Or GUICtrlRead($email) == "abc@example.com" Then
