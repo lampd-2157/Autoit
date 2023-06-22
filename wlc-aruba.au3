@@ -37,7 +37,7 @@ $role =  GUICtrlCreateCombo ("Choice role option..." ,100,135,298,25)
 GUICtrlSetData (-1 , "STAFF|MANAGER")
 
 GUICtrlCreateLabel("EMAIL:", 15, 180, 65, 25)
-$email = GUICtrlCreateInput("abc@example.com", 100, 175, 298, 25)
+$email = GUICtrlCreateInput("abc@sun-asterisk.com", 100, 175, 298, 25)
 GUICtrlSetTip($email, "Nhập email Sun* ")
 
 GUICtrlCreateLabel("SPONSOR:", 15, 220, 65, 25)
@@ -107,7 +107,7 @@ While 1
 
     Select
 	  	Case $MSG = $guide
-			ShellExecute("https://sal.vn/XctNAu")
+			ShellExecute(""https://docs.google.com/spreadsheets/d/1qzVzOsB2hGESUGc8iCD63kcCjgR0NiclHUaay-iOJU4/edit#gid=501161122")
 		Case $MSG = $GUI_EVENT_CLOSE ; Or $MSG = $CANCEL
 			Exit
 
@@ -118,7 +118,7 @@ While 1
 				$role_user = " role SUN-vlan3-staff"
 			EndIf
 		Case $MSG = $email
-			If GUICtrlRead($email) == "" Or GUICtrlRead($email) == "abc@example.com" Then
+			If GUICtrlRead($email) == "" Or GUICtrlRead($email) == "abc@sun-asterisk.com" Then
 				$email_user = ""
 			ElseIf GUICtrlRead($email) <> "" Then
 				$email_user = " email " & GUICtrlRead($email)
